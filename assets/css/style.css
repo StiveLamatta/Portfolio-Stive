@@ -2,8 +2,11 @@
     color:white;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
-    width:100%;
     background-image: linear-gradient(to right, #000, #3533cd);
     display: flex;
     justify-content: center;
@@ -215,10 +218,18 @@ p {
     color: #38b6ff;
 }
 
+.section--skills {
+    height:20%;
+}
+
 .content--link {
     width: 80%;
+    height: 15vh;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
+    align-items: center;
+    border:2px solid red;
+
 }
 
 .h3--hardsk, .h3--softsk {
@@ -230,9 +241,8 @@ p {
     text-shadow: 0px 0px 0.484916px  rgba(0, 193, 226, 0.95), 0px 0px 2.42458px  rgba(10, 194, 226, 0.75),  0px 0px 7.27374px  rgba(10, 194, 226, 0.44);
 }
 
-
-.section--skills div a img  {
-    width:50px;
+.content--link img  {
+    height:50%;
 }
 
 .content--skills {
@@ -247,7 +257,7 @@ p {
 .p--skGt, .p--skCmp, .p--skRp {
     font-family:"open sans";
     width:30%;
-    margin: 10px 10px;
+    margin: 1% 1%;
     height: 100%;
     font-size:90%; 
     font-weight: bolder;
@@ -258,7 +268,7 @@ p {
 .p--skAdp, .p--skCm {
     font-family:"open sans";
     width:40%;
-    margin: 10px 10px;
+    margin: 1% 1%;
     -webkit-text-fill-color:#38b6ff;
     -webkit-text-stroke: 0.5px #005180;
     height: 100%;
@@ -292,6 +302,66 @@ p {
 .content--message, .content--networks {
     width: 45%;
     border: 5px solid red;
+}
+
+.content--message {
+    background-image: linear-gradient(to right,#000,#3533cd)
+}
+
+.content--message {
+    border-radius:10%;
+}
+
+.form--contact {
+    margin:5%;
+    display:flex;
+    flex-direction: column;
+}
+
+.form--contact p {
+    color:#38b6ff;
+    font-family:"open sans";
+    font-weight: 800;
+    -webkit-text-fill-color: #38b6ff; 
+    -webkit-text-stroke: 1.1px #005180;
+}
+
+.input--name, .input--email {
+    width: 100%;
+    color:#000; 
+    padding:0;
+    border:0;    
+}
+
+.input--send {
+    width: 100%;
+    color:#000;
+    padding:0;
+    border:0;   
+    margin:10px 0; 
+}
+
+.input--msg {
+    width: 100%;
+    color:#000;
+    resize: none;
+    padding:0;
+    border:0;
+}
+
+
+.content--maps, .content--mail {
+    display:flex;
+    align-items:center
+}
+
+
+.content--maps img, .content--mail img{
+    width:10%;
+}
+
+.content--red a img {
+    width:20%;
 }
 
 .footer--fn {
