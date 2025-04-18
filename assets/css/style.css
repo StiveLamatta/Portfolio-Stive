@@ -2,6 +2,16 @@
     color:white;
 }
 
+.content--proy {
+    overflow:hidden;
+}
+
+.content--proy1 {
+    overflow:auto;
+}
+
+
+
 html {
     height: 100vh;
 }
@@ -15,39 +25,89 @@ body {
     margin:0;
 }
 
+section {
+    scroll-margin-top:70px;
+}
+
+.nav {
+    box-sizing:border-box;
+    border:2px solid red;
+    width:100%;
+    position:sticky;
+    top:0;
+    background-image:linear-gradient(to right,#000,#3533cd);
+    display:flex;
+    justify-content:center;
+    z-index:10;
+}
+
+.nav__ul {
+    border:2px solid orange;
+    list-style:none;
+    display:flex;
+    width:78%;
+    align-items:stretch;
+    padding:0;
+}
+
+.nav__li {
+    border: 2px solid pink;
+    margin:0;
+    flex-grow:1;
+    padding:0;
+    text-align:center;
+}
+
+.nav__li a {
+    display:inline-block;
+    border: 2px solid orchid;
+    color:#38b6ff;
+    font-family:"open sans";
+    font-weight: 800;
+    text-decoration:none;
+    width:100%;
+}
+
 .header {
+    height: 88vh;
     display: flex;
     width:100%;
-    margin:20% 0 0 0;
+    margin:0 0 0 0;
     border:3.5px solid #000;
     justify-content:center;
-    box-sizing:border-box
+    box-sizing:border-box;
+    align-items:center;
 }
 
 .header__profile {
     align-content:center;
-    display: inline-block;
+    display: flex;
     border: 2px solid brown;
-    margin-left:2%;
+    margin:0;
+    height:50%;
 }
 
 .header__profile img {
-    height:100px;
     border-radius:50%;
     background-color:#fff;
-    border: 5px solid black;
+    border: 0.5em solid black;
+    height:80%;
+    margin:0;
 }
 
 .header__presentation {
     display: inline-block;
     border: 2px solid brown;
-    margin-right:2%;
+    margin:0;
+    height:50%;
+    width:40%;
 }
 
 .header__name {
     border: 2px solid red;
     display: flex;
     flex-direction:column;
+    height:50%
 }
 
 .header__name h1 {
@@ -55,10 +115,12 @@ body {
     order:2;
     font-family: "open sans";
     margin:0;
-    letter-spacing:1px;
-    word-spacing: 5px;
+    letter-spacing:0.1em;
+    word-spacing: 0.1em;
     font-weight: 500;
-    font-size:37.5px;
+    font-size:400%;
+    border:5px solid purple;
+    height:70%;
 }
 
 .header__name p {
@@ -67,31 +129,39 @@ body {
     font-family: "open sans";
     text-align:right;
     margin:0;
-    font-size: 23px;
-    letter-spacing: 1px;
+    font-size: 250%;
+    letter-spacing: 10%;
+    border: 2px solid pink;
+    height:30%;
+    padding:0 0.3em;
 }
 
 
 .header__info {
     border: 3px solid yellow;
     display:flex;
-    justify-content: space-between;
-    height:42px;
+    height:30%;
+    justify-content:space-around;
+    margin:0;
 }
 
 .header__cv {
     border: 2px solid green;
+    display:flex;
+    align-items:center;
+    width:50%;
 }
 
 .link--cv {
-    width:85px;
-    height:15px;
+    margin:10px;
+    width:80%;
+    height:25%;
     display:inline-block;
     padding:7px 15px;
     background-color: #2e2db3;
     border: 5px solid black;
     border-radius: 15px;
-    font-size: 12px;
+    font-size: 100%;
     text-align: center;
     font-family: "Balsamiq Sans";
     text-decoration: none;
@@ -99,67 +169,67 @@ body {
 
 .header__networks {
     border: 1px solid rgb(187, 0, 255);
-    width: 44%;
     display: flex;
     justify-content: space-between;
+    width:50%;
 }
 
 .link--github {
     background-color: transparent;
-    border:3px solid black;
+    border:0.5em solid black;
     text-decoration: none;
     border-radius: 100%;
-    width: 32px;
-    height:32px;
+    width: 5.1em;
+    height:5.1em;
     box-sizing:border-box;
     margin:auto
 }
 
 .header__wsp{
-    border:1px solid black;
+    border:0.4em solid black;
     text-decoration: none;
     border-radius: 50%;
-    width: 26.5px;
-    height:25.4px;
+    width: 3.7em;
+    height:3.7em;
     margin:auto
 }
 
 .link--linkedin{
-    height: 30px;
-    border-radius:6px;
+    height: 4em;
+    border-radius:1.5em;
     margin:auto;
-    border:1.6px solid black;
+    border:0.35em solid black;
 }
 
 
 .image--wsp {
-    border-radius: 7px;
-    width: 30px;
-    height:30px;
+    border-radius: 1em;
+    width: 4.3em;
+    height:4.3em;
     position:relative;
-    top:-1px;
-    left:-1.2px;
-    filter:drop-shadow(-2px 2px 2px black)
+    top:-0.1em;
+    left:-0.15em;
+    filter:drop-shadow(-5em 5em 5em black)
 }
 
 .image--github {
-    width: 30px;
-    height:30px;
+    width: 4.3em;
+    height:4.3em;
     background-color:white;
     position: relative;
-    top:-1px;
-    left:-1px;
+    top:-0.1em;
+    left:-0.1em;
     z-index:-1;
-    border-radius:15px;
+    border-radius:2em;
     padding:0;
     margin:0;
 }
 
 .image--linkedin {
-    width: 30px;
-    height:30px;
+    width: 4em;
+    height:4em;
     background-color:white;
-    border-radius:4px;
+    border-radius:1em;
     position:relative;
     z-index:-1;
 }
