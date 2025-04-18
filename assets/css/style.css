@@ -3,7 +3,7 @@
 }
 
 html {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 body {
@@ -292,6 +292,7 @@ p {
     margin: 10px;
 }
 
+
 .content--contact {
     width: 80%;
     height:300px;
@@ -302,6 +303,8 @@ p {
 .content--message, .content--networks {
     width: 45%;
     border: 5px solid red;
+    display:flex;
+    flex-direction:column;
 }
 
 .content--message {
@@ -312,10 +315,15 @@ p {
     border-radius:10%;
 }
 
+#response {
+    text-align: center ;
+}
+
 .form--contact {
-    margin:5%;
+    margin:5% 5% 0 5%;
     display:flex;
     flex-direction: column;
+    height:80%;
 }
 
 .form--contact p {
@@ -369,3 +377,34 @@ p {
     height: 100px;
 }
 
+
+[class^="section__content content--proy"] {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:30%;
+    background-image: url('../images/fond.jpg'); /* ajusta según la estructura */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.content--proy {
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:80%;
+    overflow-y: auto;
+    background-image:none;
+}
+
+[class*="content--proy"] p{
+    margin:0px;
+    text-align:center;
+    background-color:rgb(16, 71, 119);
+}
+
+[class*="content--proy"] a {
+    margin:0px;
+    text-align:center;
+}

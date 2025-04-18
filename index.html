@@ -95,30 +95,54 @@
             <h2 class="section__h2 h2--proy">Proyects</h2>
             <hr>
             <div class="section__content content--proy">
-                <div class="section__content content--proy2">
-                    <a class="section__link link--proy1" href="">
-                        <img class="section__img img--proy1" src="" alt="">
-                    </a></div>
-                <div class="section__content content--proy3">
-                    <a class="section__link link--proy2" href="">
-                        <img class="section__img img--proy2" src="" alt="">
-                    </a></div>
-                <div class="section__content content--proy4">
-                    <a class="section__link link--proy3" href="">
-                        <img class="section__img img--proy3" src="" alt="">
-                    </a></div>
-                <div class="section__content content--proy5">
-                    <a class="section__link link--proy4" href="">
-                        <img class="section__img img--proy4" src="" alt="">
-                    </a></div>
-                <div class="section__content content--proy6">
-                    <a class="section__link link--proy5" href="">
-                        <img class="section__img img--proy5" src="" alt="">
-                    </a></div>
                 <div class="section__content content--proy1">
+                    <a class="section__link link--proy1" href="">
+                        <img class="section__img img--proy1" src="assets/images/linkext.png" alt="">
+                    </a>
+                    <p>
+                        Gestor de tareas con Django + MySQL
+                    </p>
+                </div>
+                <div class="section__content content--proy2">
+                    <a class="section__link link--proy2" href="">
+                        <img class="section__img img--proy2" src="assets/images/linkext.png" alt="">                    
+                    </a>
+                    <p>
+                        API RESTful de notas con autenticación JWT
+                    </p>
+                </div>
+                <div class="section__content content--proy3">
+                    <a class="section__link link--proy3" href="">
+                        <img class="section__img img--proy3" src="assets/images/linkext.png" alt="">                    
+                    </a>
+                    <p>
+                        Mini sistema de inventario con interfaz
+                    </p>
+                </div>
+                <div class="section__content content--proy4">
+                    <a class="section__link link--proy4" href="">
+                        <img class="section__img img--proy4" src="assets/images/linkext.png" alt="">                    
+                    </a>
+                    <p>
+                        Scraper + visualizador de datos
+                    </p>
+                </div>
+                <div class="section__content content--proy5">
+                    <a class="section__link link--proy5" href="">
+                        <img class="section__img img--proy5" src="assets/images/linkext.png" alt="">                    
+                    </a>
+                    <p>
+                        Bot de automatización (pelegram o Discord)
+                    </p>
+                </div>
+                <div class="section__content content--proy6">
                     <a class="section__link link--proy6" href="">
-                        <img class="section__img img--proy6" src="" alt="">
-                    </a></div>
+                        <img class="section__img img--proy6" src="assets/images/linkext.png" alt="">                   
+                     </a>
+                    <p>
+                        🌐 Proyecto colaborativo en GitHub
+                    </p>
+                </div>
             </div>
         </section>
         <section class="section section--acknow">
@@ -174,8 +198,7 @@
                   
                       <input class="section__input input--send" type="submit" value="Send"> 
                     </form>
-                  
-                    <div id="response"></div>
+                    <div id="response">😊</div>
                   </div>
         </section>
         <footer class="footer footer--fn">
@@ -195,7 +218,7 @@
         
               emailjs.sendForm("service_h0qaek9", "template_33flc98", form)
                 .then(function(response) {
-                  document.getElementById('response').innerText = "¡Mensaje enviado con éxito!";
+                  document.getElementById('response').innerText = "¡Mensaje enviado con éxito!😉";
                   form.reset();
                 }, function(error) {
                   document.getElementById('response').innerText = "Hubo un error al enviar el mensaje.";
