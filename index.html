@@ -20,6 +20,7 @@
             </ul>
         </nav>
         <header class="header">
+            
             <div class="header__presentation">
                 <div class="header__name ">
                     <h1>Stive Lamatta</h1>
@@ -36,7 +37,7 @@
                         <a class="header__link link--linkedin" href="https://www.linkedin.com/in/jean-stive-lamatta-pintado-45bb17242/" target="_blank" title="Linkedin Stive">
                             <img class="header__image image--linkedin" src="assets/images/linkedin.png" alt="linkedin Stive Lamatta">
                         </a>
-                        <a href="https://wa.me/51934689677?text=Hola quiero informacion" target="__blank" class="header__wsp">
+                        <a class="header__link link--wsp" href="https://wa.me/51934689677?text=Hola quiero informacion" target="__blank" class="">
                             <img class="header__image image--wsp"src="assets/images/wsp.png">
                         </a>
                     </div>
@@ -159,14 +160,14 @@
                         <p> jstivelamatta@gmail.com</p>
                     </div>
                     <div class="section__content content--red">
-                        <a href="">
+                        <a href="https://github.com/StiveLamatta">
                             <img src="assets/images/github.png" alt="github">
                         </a>
-                        <a href="">
+                        <a href="https://wa.me/51934689677?text=Hola quiero informacion">
                             <img src="assets/images/wsp.png" alt="">
                         </a>
-                        <a href="">
-                            <img src="assets/images/linkedin.png" alt="">
+                        <a href="https://www.linkedin.com/in/jean-stive-lamatta-pintado-45bb17242/">
+                            <img class="section__a a--link" src="assets/images/linkedin.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -179,8 +180,7 @@
                       <input class="section__input input--email" type="email" name="reply_to">
                   
                       <p>Message</p>
-                      <textarea class="section__input input--msg" name="message"></textarea>
-                  
+                      <textarea class="section__input input--msg" name="message">hola</textarea>
                       <input class="section__input input--send" type="submit" value="Send"> 
                     </form>
                     <div id="response">😊</div>
@@ -191,27 +191,7 @@
         </footer>
 
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-        <script>
-          emailjs.init("2D4FBjCWNvCy7ELkP"); // Tu public key
-        
-          document.addEventListener("DOMContentLoaded", function () {
-            const form = document.getElementById("contact-form");
-        
-            form.addEventListener("submit", function (event) {
-              event.preventDefault();
-        
-              emailjs.sendForm("service_h0qaek9", "template_33flc98", form)
-                .then(function(response) {
-                  document.getElementById('response').innerText = "¡Mensaje enviado con éxito!😉";
-                  form.reset();
-                }, function(error) {
-                  document.getElementById('response').innerText = "Hubo un error al enviar el mensaje.";
-                  console.error("Error al enviar el correo:", error);
-                });
-            });
-          });
-        </script>
+        <script src="/assets/js/script.js"></script>
         
     </body>
 </html>
